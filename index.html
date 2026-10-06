@@ -1,0 +1,299 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Sherif Portfolio</title>
+
+    <style>
+
+        /* BODY */
+        body {
+            background-color: #f2f6ff;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+
+        /* MAIN HEADING */
+        h1 {
+            color: #1e3a8a;
+            font-size: 40px;
+            letter-spacing: 3px;
+
+            animation: titleAnimation 2s ease-in-out;
+        }
+
+        /* Heading Animation */
+        @keyframes titleAnimation {
+            from {
+                opacity: 0;
+                transform: translateY(-40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* NAVIGATION */
+        nav {
+            background-color: #1e3a8a;
+            padding: 15px;
+
+            animation: navAnimation 1.5s ease;
+        }
+
+        @keyframes navAnimation {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-size: 17px;
+
+            transition: 0.3s;
+        }
+
+        /* Navigation Hover */
+        nav a:hover {
+            color: #ffd700;
+            transform: scale(1.1);
+            display: inline-block;
+        }
+
+        /* PROFILE */
+        .profile {
+            margin-top: 30px;
+
+            animation: imageAnimation 2s ease;
+        }
+
+        /* PROFILE IMAGE */
+        .profile img {
+            width: 350px;
+            height: 470px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 5px solid white;
+            box-shadow: 0 4px 15px gray;
+
+            transition: 0.5s;
+        }
+
+        /* Image Hover */
+        .profile img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px gray;
+        }
+
+        @keyframes imageAnimation {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* SECTIONS */
+        .section {
+            background-color: white;
+            width: 70%;
+            margin: 25px auto;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px #ccc;
+
+            /* Section Animation */
+            animation: sectionAnimation 1.5s ease;
+            transition: 0.4s;
+        }
+
+        /* Section Hover */
+        .section:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px #aaa;
+        }
+
+        @keyframes sectionAnimation {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* SECTION HEADINGS */
+        h2 {
+            color: #1e3a8a;
+            letter-spacing: 1px;
+
+            transition: 0.3s;
+        }
+
+        h2:hover {
+            color: #2563eb;
+            letter-spacing: 3px;
+        }
+
+        /* PARAGRAPH */
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+
+            animation: footerAnimation 2s ease;
+        }
+
+        @keyframes footerAnimation {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <center>
+        <h1>Portfolio</h1>
+    </center>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <center>
+            <strong>
+
+                <a href="#name">Name</a>
+                <a href="#college">College</a>
+                <a href="#department">Department</a>
+                <a href="#skills">Skills</a>
+                <a href="#hobbies">Hobbies</a>
+                <a href="#contact">Contact</a>
+
+            </strong>
+        </center>
+    </nav>
+
+
+    <!-- PROFILE IMAGE -->
+
+    <div class="profile">
+
+        <center>
+
+            <img src="sherif1.jpeg">
+
+        </center>
+
+    </div>
+
+
+    <!-- NAME -->
+
+    <div class="section" id="name">
+
+        <center>
+
+            <h2>Name</h2>
+
+            <p>Sherif R</p>
+
+        </center>
+
+    </div>
+
+
+    <!-- COLLEGE -->
+
+    <div class="section" id="college">
+
+        <center>
+
+            <h2>College</h2>
+
+            <p>
+                Sri Saraswathi Theyagaraja College - Pollachi
+            </p>
+
+        </center>
+
+    </div>
+
+
+    <!-- DEPARTMENT -->
+
+    <div class="section" id="department">
+
+        <center>
+
+            <h2>Department</h2>
+
+            <p>MCA - 1st Year</p>
+
+        </center>
+
+    </div>
+
+
+    <!-- SKILLS -->
+
+    <div class="section" id="skills">
+
+        <center>
+
+            <h2>Skills</h2>
+
+            <p>
+                HTML, CSS, C++, Python
+            </p>
+
+        </center>
+
+    </div>
+
+
+    <!-- HOBBIES -->
+
+    <div class="section" id="hobbies">
+
+        <center>
+
+            <h2>Hobbies</h2>
+
+            <p>
+                playing cricket,photography
